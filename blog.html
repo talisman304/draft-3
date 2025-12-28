@@ -1,1 +1,109 @@
-<!doctype html><html><body><h1>Blog</h1></body></html>
+<!-- blog.html -->
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blog | Iridescent Dental Academy</title>
+  <meta name="description" content="Articles on layered composite veneers, smile design, finishing, and clinical photography." />
+  <meta name="theme-color" content="#070A12" />
+  <link rel="preload" href="assets/styles.css" as="style" />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script defer src="assets/app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="hdr" data-header>
+    <div class="container hdr__row">
+      <a class="brand" href="index.html">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__text">Iridescent Dental Academy<small>By Dr Charles Brandon</small></span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="blog.html" aria-current="page">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="hdr__actions">
+        <button class="btn btn--ghost hdr__menu" data-menu-btn aria-expanded="false" aria-controls="mobileNav">Menu</button>
+        <a class="btn btn--primary" href="index.html#enquire">Enquire</a>
+      </div>
+    </div>
+
+    <div class="container mobile" id="mobileNav" data-mobile-nav hidden>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="blog.html" aria-current="page">Blog</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="progress" aria-hidden="true"><span data-progress></span></div>
+  </header>
+
+  <main id="main">
+    <section class="pageHero">
+      <div class="container">
+        <div class="section__head reveal">
+          <h1>Blog</h1>
+          <p>Content that supports conversion: clarify outcomes, demonstrate philosophy, and reduce objections before enquiry.</p>
+        </div>
+
+        <div class="blogGrid">
+          <article class="postCard reveal">
+            <a href="post.html" class="postCard__link">
+              <div class="postCard__thumb glass" aria-hidden="true"></div>
+              <div class="postCard__body">
+                <div class="postMeta">Smile design • 6 min read</div>
+                <h2 class="postTitle">Why “natural” layered composites look different</h2>
+                <p class="postExcerpt">A practical lens on tooth planes, line angles, and gloss control—plus what to photograph to show it clearly.</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="postCard reveal">
+            <a href="post.html" class="postCard__link">
+              <div class="postCard__thumb glass" aria-hidden="true"></div>
+              <div class="postCard__body">
+                <div class="postMeta">Finishing • 5 min read</div>
+                <h2 class="postTitle">Texture and polish: the repeatable protocol</h2>
+                <p class="postExcerpt">A workflow-first approach to finishing—what matters, what doesn’t, and how to avoid “flat” restorations.</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="postCard reveal">
+            <a href="post.html" class="postCard__link">
+              <div class="postCard__thumb glass" aria-hidden="true"></div>
+              <div class="postCard__body">
+                <div class="postMeta">Photography • 7 min read</div>
+                <h2 class="postTitle">Clinical photography that improves case acceptance</h2>
+                <p class="postExcerpt">Standardise capture so patients understand outcomes and you can track consistency over time.</p>
+              </div>
+            </a>
+          </article>
+        </div>
+
+        <div class="ctaBand reveal" style="margin-top:1.2rem;">
+          <div>
+            <h2>Prefer the intensive route?</h2>
+            <p>Get cohort dates and prerequisites for the Composite Veneer Masterclass.</p>
+          </div>
+          <div class="ctaBand__actions">
+            <a class="btn btn--primary" href="index.html#enquire">Enquire</a>
+            <a class="btn btn--ghost" href="contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="ftr">
+      <div class="container ftr__grid">
+        <div class="ftr__card"><strong>© <span data-year></span></strong></div>
+        <div class="ftr__card"><a class="link" href="index.html#enquire">Enquire</a></div>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
