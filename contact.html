@@ -1,1 +1,146 @@
-<!doctype html><html><body><h1>Contact</h1></body></html>
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Iridescent Dental Academy</title>
+  <meta name="description" content="Contact Iridescent Dental Academy. Phone, email, and enquiry form." />
+  <meta name="theme-color" content="#070A12" />
+  <link rel="preload" href="assets/styles.css" as="style" />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script defer src="assets/app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="hdr" data-header>
+    <div class="container hdr__row">
+      <a class="brand" href="index.html">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__text">Iridescent Dental Academy<small>By Dr Charles Brandon</small></span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+
+      <div class="hdr__actions">
+        <button class="btn btn--ghost hdr__menu" data-menu-btn aria-expanded="false" aria-controls="mobileNav">Menu</button>
+        <a class="btn btn--primary" href="index.html#enquire">Enquire</a>
+      </div>
+    </div>
+
+    <div class="container mobile" id="mobileNav" data-mobile-nav hidden>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </div>
+
+    <div class="progress" aria-hidden="true"><span data-progress></span></div>
+  </header>
+
+  <main id="main">
+    <section class="pageHero">
+      <div class="container pageHero__grid">
+        <div class="reveal">
+          <h1>Contact</h1>
+          <p class="lead">For cohort dates, fees, prerequisites, or suitability guidance.</p>
+
+          <div class="cards cards--2">
+            <article class="card">
+              <h3>Direct</h3>
+              <p>
+                Phone: <a class="link" href="tel:+447542164798">07542 164798</a><br />
+                Email: <a class="link" href="mailto:enquiries@drcharlesbrandon.com">enquiries@drcharlesbrandon.com</a><br />
+                Instagram: <a class="link" href="https://www.instagram.com/charlesmbrandon/?hl=en-gb" target="_blank" rel="noopener">@charlesmbrandon</a>
+              </p>
+              <p class="small">Opening hours: Mon–Fri 08:30–17:30.</p>
+            </article>
+
+            <article class="card">
+              <h3>Before you enquire</h3>
+              <ul class="list">
+                <li>This course is advanced and intensive (not an introduction).</li>
+                <li>You may need an iPad, Apple Pencil and DSLR camera.</li>
+                <li>Include your experience level for the fastest fit guidance.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+
+        <aside class="glass reveal" aria-label="Contact form">
+          <div class="panel__head">
+            <div>
+              <h2 class="panel__title">Send a message</h2>
+              <p class="panel__sub">Deploy-ready form (Netlify compatible).</p>
+            </div>
+            <span class="badge">Fast response</span>
+          </div>
+
+          <form class="form" name="contact" method="post" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contact" />
+            <p class="sr-only">
+              <label>Don’t fill this out: <input name="bot-field" /></label>
+            </p>
+
+            <div class="grid2">
+              <div>
+                <label for="cname">Name</label>
+                <input id="cname" name="name" autocomplete="name" required />
+              </div>
+              <div>
+                <label for="cemail">Email</label>
+                <input id="cemail" name="email" type="email" autocomplete="email" required />
+              </div>
+            </div>
+
+            <div>
+              <label for="ctopic">Topic</label>
+              <select id="ctopic" name="topic" required>
+                <option value="" selected disabled>Select</option>
+                <option>Dates & fees</option>
+                <option>Suitability / experience</option>
+                <option>Prerequisites / equipment</option>
+                <option>Booking / policies</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="cmsg">Message</label>
+              <textarea id="cmsg" name="message" required placeholder="Include your experience level and what you want to improve."></textarea>
+            </div>
+
+            <button class="btn btn--primary btn--full" type="submit">Send</button>
+            <p class="note">Or email <a class="link" href="mailto:enquiries@drcharlesbrandon.com">enquiries@drcharlesbrandon.com</a></p>
+          </form>
+        </aside>
+      </div>
+    </section>
+
+    <footer class="ftr">
+      <div class="container ftr__grid">
+        <div class="ftr__card">
+          <strong>Official</strong>
+          <p><a class="link" href="https://drcharlesbrandon.com/dentists/" target="_blank" rel="noopener">Dentists / course page</a></p>
+        </div>
+        <div class="ftr__card">
+          <strong>© <span data-year></span></strong>
+          <p class="small">Performance-first static build.</p>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <div class="sticky" role="region" aria-label="Quick actions">
+    <div class="container sticky__row">
+      <a class="btn btn--primary btn--full" href="tel:+447542164798">Call</a>
+      <a class="btn btn--glass btn--full" href="mailto:enquiries@drcharlesbrandon.com">Email</a>
+    </div>
+  </div>
+</body>
+</html>
